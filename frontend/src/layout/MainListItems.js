@@ -71,11 +71,12 @@ const MainListItems = (props) => {
   }, [whatsApps]);
 
   return (
-    <div onClick={drawerClose}>
+    <div className="oi" onClick={drawerClose}>
       <ListItemLink
         to="/"
         primary="Dashboard"
         icon={<DashboardOutlinedIcon />}
+        color="red"
       />
       <ListItemLink
         to="/connections"

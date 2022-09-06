@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       maxWidth: "80%",
       flexBasis: "80%",
+     
     },
   },
   ticketActionButtons: {
@@ -43,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "100%",
       flexBasis: "100%",
       marginBottom: "5px",
+      
     },
   },
 
@@ -54,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,
-    borderLeft: "0",
+    borderLeft: "10",
     marginRight: -drawerWidth,
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,

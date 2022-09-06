@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
 		backgroundColor: "#eee",
 		flex: "none",
 		borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+		
 	},
 }));
 

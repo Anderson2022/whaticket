@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 		flexDirection: "column",
 		alignItems: "center",
 		justifyContent: "center",
+		
 	},
 
 	noTicketsText: {
@@ -106,7 +107,7 @@ const useStyles = makeStyles(theme => ({
 		right: 5,
 		bottom: 5,
 		background: "#2576D2",
-		color: "#ffffff",
+		color: "#111418",
 		border: "1px solid #CCC",
 		padding: 1,
 		paddingLeft: 5,
@@ -171,7 +172,7 @@ const TicketListItem = ({ ticket }) => {
 					title={ticket.queue?.name || "Sem fila"}
 				>
 					<span
-						style={{ backgroundColor: ticket.queue?.color || "#7C7C7C" }}
+						style={{ backgroundColor: ticket.queue?.color || "#194d33" }}
 						className={classes.ticketQueueColor}
 					></span>
 				</Tooltip>

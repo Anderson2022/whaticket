@@ -1,10 +1,10 @@
 import React from "react";
-
 import { Card, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import TicketHeaderSkeleton from "../TicketHeaderSkeleton";
 import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import { useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   ticketHeader: {
@@ -31,7 +31,7 @@ const TicketHeader = ({ loading, children }) => {
         <TicketHeaderSkeleton />
       ) : (
         <Card square className={classes.ticketHeader}>
-          <Button color="primary" onClick={handleBack}>
+          <Button color="red" onClick={handleBack}>
             <ArrowBackIos />
           </Button>
           {children}

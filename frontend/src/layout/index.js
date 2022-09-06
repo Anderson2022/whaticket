@@ -44,13 +44,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-end",
     padding: "0 8px",
-    minHeight: "48px",
+    minHeight: "70px",
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
+      background: "#111418",
     }),
   },
   appBarShift: {
@@ -62,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   menuButton: {
-    marginRight: 36,
+    marginRight: 38,
   },
   menuButtonHidden: {
     display: "none",
@@ -200,7 +201,7 @@ const LoggedInLayout = ({ children }) => {
         <Toolbar variant="dense" className={classes.toolbar}>
           <IconButton
             edge="start"
-            color="inherit"
+            color="red"
             aria-label="open drawer"
             onClick={() => setDrawerOpen(!drawerOpen)}
             className={clsx(
@@ -213,11 +214,11 @@ const LoggedInLayout = ({ children }) => {
           <Typography
             component="h1"
             variant="h6"
-            color="inherit"
+            color="#8E292C"
             noWrap
             className={classes.title}
           >
-            WhaTicket
+            Whatsapp
           </Typography>
           {user.id && <NotificationsPopOver />}
 
